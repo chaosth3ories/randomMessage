@@ -1,0 +1,15 @@
+// Define arrays for input variables
+const greetings = ["NMN is awesome", "Sleep is awesome", "Revestarol is mid"];
+
+// Function to generate a random message
+function generateRandomMessage() {
+  // Randomly select values from each array
+  const randomGreeting = greetings[Math.floor(Math.random() * greetings.length)];
+  // Combine the selected values into a random message
+  const randomMessage = `${randomGreeting}`;
+  
+  return randomMessage;
+}
+// Call the function to generate a random message
+const randomMessage = generateRandomMessage();
+console.log(randomMessage);
